@@ -3,9 +3,16 @@ My Blog:
 Things learned from Java the Hard Way:
 
 When would you use '=' vs '==' vs '.equals'?
-- '=' is used to assign a variable a value. The value will be stored until it is changed later in the program. 
-  Ex. "int x = 3" stores the value 3 into the variable x.
-- '==' is a relational operator that checks if two values are equal to each other. The result is a true or false value.
-  '==' will correctly compare integers and doubles, but will not compare strings.
-- '.equals' is a method that compares two strings and result in a true or false value. 
-  Ex. "dog.equals("Franklin")" will check if the string dog is equal to "Franklin". 
+   '=' is used to assign a variable a value. The value will be stored until it is changed later in the program. 
+Ex. "int x = 3" stores the value 3 into the variable x.
+   '==' is a relational operator that checks if two values are equal to each other. The result is a true or false value.
+'==' will correctly compare integers and doubles, but will not compare strings.
+   '.equals' is a method that compares two strings and result in a true or false value. 
+Ex. "dog.equals("Franklin")" will check if the string dog is equal to "Franklin". 
+
+What does it mean to 'cast a double to an int'?
+  Casting a double to an int means you are taking the extra decimals on a double and truncating them. The same thing as rounding
+down a double to a whole number. This could be useful if you wanted to numericaly display a random day of the week. 
+After using 1 + (7*Math.random()) do randomize a number 1-7, the result would be a double, due to the output of Math.random().
+Since there are no decimal days, you would want to reformat the code to 1+(int)(7*Math.random()) to display a single integer value.
+
