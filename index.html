@@ -16,3 +16,19 @@ down a double to a whole number. This could be useful if you wanted to numerical
 After using 1 + (7*Math.random()) do randomize a number 1-7, the result would be a double, due to the output of Math.random().
 Since there are no decimal days, you would want to reformat the code to 1+(int)(7*Math.random()) to display a single integer value.
 
+What is the the difference between a 'for', 'while' and 'do while' loop?
+   A 'for' loop is best used when you specifically know how many times a loop should run. A 'while' and 'do while' loop will 
+always execute the loop body as long as a specified condition is met. The difference between a 'while' and 'do while' loop is
+that a 'while' loop declares its condition prior to the loop body and therefore only runs the body is the condition is met.
+A 'do while' loop features its condition after the loop body and therefore will always run the loop body once before checking
+to see if the condition is met. For example if the condition depends on user input from the loop body, the loop would would need
+to run first. Thus requiring a 'do while' loop and not a 'while' loop.
+
+What happens when you include 'import java.util.Scanner;' in your code?
+   The command 'import java.util.Scanner' imports the Scanner library which allows the user to input information to the program
+using their keyboard, files on their computer, or the internet. 'Scanner' is a predefined class inside of the 'util' or 'utilites'
+folder inside of the 'java' folder. So 'Java.util.Scanner' points java to the correct directory to find the Scanner library.
+
+What is void in method declaration and how does it differ from declaring a method with a return type?
+   Void should be used in a function when you have no intentions of returning a value. If the function will be called then void
+should be replaced with the type of value that function is returning whether it be int, string, or double. 
