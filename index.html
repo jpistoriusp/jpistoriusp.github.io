@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>My Blog</title>
-   </head>
-   
-   <body>
-      <h1>Things learned from <i>Java the Hard Way</i></h1>
+<body style="background-color:powderblue;">
+   <h1> My Blog </h1>
+      <h3>Things learned from <i>Java the Hard Way</i></h3>
          
-         <h3>When would you use '=' vs '==' vs '.equals'?</h3>
+         <h5>When would you use '=' vs '==' vs '.equals'?</h5>
          <p>'=' is used to assign a variable a value. The value will be stored until it is changed later in the program. 
          Ex. "int x = 3" stores the value 3 into the variable x.
          '==' is a relational operator that checks if two values are equal to each other. The result is a true or false value.
@@ -15,13 +12,13 @@
          '.equals' is a method that compares two strings and result in a true or false value. 
          Ex. "dog.equals("Franklin")" will check if the string dog is equal to "Franklin".</p>
 
-         <h3>What does it mean to 'cast a double to an int'?</h3>
+         <h5>What does it mean to 'cast a double to an int'?</h5>
          <p>Casting a double to an int means you are taking the extra decimals on a double and truncating them. The same thing as rounding
          down a double to a whole number. This could be useful if you wanted to numericaly display a random day of the week. 
          After using 1 + (7*Math.random()) do randomize a number 1-7, the result would be a double, due to the output of Math.random().
          Since there are no decimal days, you would want to reformat the code to 1+(int)(7*Math.random()) to display a single integer value.</p>
 
-         <h3>What is the the difference between a 'for', 'while' and 'do while' loop?</h3>
+         <h5>What is the the difference between a 'for', 'while' and 'do while' loop?</h5>
          <p>A 'for' loop is best used when you specifically know how many times a loop should run. A 'while' and 'do while' loop will 
          always execute the loop body as long as a specified condition is met. The difference between a 'while' and 'do while' loop is
          that a 'while' loop declares its condition prior to the loop body and therefore only runs the body is the condition is met.
@@ -29,12 +26,12 @@
          to see if the condition is met. For example if the condition depends on user input from the loop body, the loop would would need
          to run first. Thus requiring a 'do while' loop and not a 'while' loop.</p>
 
-        <h3>What happens when you include 'import java.util.Scanner;' in your code?</h3>
+        <h5>What happens when you include 'import java.util.Scanner;' in your code?</h5>
         <p>The command 'import java.util.Scanner' imports the Scanner library which allows the user to input information to the program
         using their keyboard, files on their computer, or the internet. 'Scanner' is a predefined class inside of the 'util' or 'utilites'
         folder inside of the 'java' folder. So 'Java.util.Scanner' points java to the correct directory to find the Scanner library.</p>
 
-        <h3>What is void in method declaration and how does it differ from declaring a method with a return type?</h3>
+        <h5>What is void in method declaration and how does it differ from declaring a method with a return type?</h5>
         <p>Void should be used in a function when you have no intentions of returning a value. If the function will be called then void
         should be replaced with the type of value that function is returning whether it be int, string, or double.</p>
    </body>
